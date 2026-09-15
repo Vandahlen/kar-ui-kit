@@ -25,3 +25,5 @@ export { default as ChalmersFilterButton } from './components/ChalmersFilterButt
 export type { ChalmersFilterButtonProps } from './components/ChalmersFilterButton';
 export { default as ChalmersSegmentedControl } from './components/ChalmersSegmentedControl';
 export type { ChalmersSegmentedControlProps } from './components/ChalmersSegmentedControl';
+export { default as ChalmersTagChip } from './components/ChalmersTagChip';
+export type { ChalmersTagChipProps } from './components/ChalmersTagChip';
