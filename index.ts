@@ -23,3 +23,5 @@ export { default as ChalmersSearchField } from './components/ChalmersSearchField
 export type { ChalmersSearchFieldProps } from './components/ChalmersSearchField';
 export { default as ChalmersFilterButton } from './components/ChalmersFilterButton';
 export type { ChalmersFilterButtonProps } from './components/ChalmersFilterButton';
+export { default as ChalmersSegmentedControl } from './components/ChalmersSegmentedControl';
+export type { ChalmersSegmentedControlProps } from './components/ChalmersSegmentedControl';
