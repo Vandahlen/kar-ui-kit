@@ -1,5 +1,6 @@
 export * from './theme/theme';
 export * from './theme/ThemeContext';
+export * from './theme/componentSpecs';
 export { default as ChalmersText } from './components/ChalmersText';
 export type { ChalmersTextProps, ChalmersTextVariant } from './components/ChalmersText';
 export { default as ChalmersButton } from './components/ChalmersButton';
@@ -7,7 +8,14 @@ export type { ChalmersButtonProps, ChalmersButtonVariant } from './components/Ch
 export { default as SearchIcon } from './components/icons/SearchIcon';
 export type { SearchIconProps } from './components/icons/SearchIcon';
 export { default as FilterIcon } from './components/icons/FilterIcon';
-export type { FilterIconProps } from './components/icons/FilterIcon';
+export type { IconProps } from './components/icons/types';
+export { default as HomeIcon } from './components/icons/HomeIcon';
+export { default as FoodIcon } from './components/icons/FoodIcon';
+export { default as EventIcon } from './components/icons/EventIcon';
+export { default as PlusIcon } from './components/icons/PlusIcon';
+export { default as HeartIcon } from './components/icons/HeartIcon';
+export { default as ArrowRightIcon } from './components/icons/ArrowRightIcon';
+export { default as PersonIcon } from './components/icons/PersonIcon';
 export { default as FlagUK } from './components/icons/FlagUK';
 export { default as FlagSE } from './components/icons/FlagSE';
 export type { FlagIconProps } from './components/icons/FlagUK';
