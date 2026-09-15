@@ -21,3 +21,5 @@ export { default as FlagSE } from './components/icons/FlagSE';
 export type { FlagIconProps } from './components/icons/FlagUK';
 export { default as ChalmersSearchField } from './components/ChalmersSearchField';
 export type { ChalmersSearchFieldProps } from './components/ChalmersSearchField';
+export { default as ChalmersFilterButton } from './components/ChalmersFilterButton';
+export type { ChalmersFilterButtonProps } from './components/ChalmersFilterButton';
