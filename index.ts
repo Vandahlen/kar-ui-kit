@@ -27,3 +27,5 @@ export { default as ChalmersSegmentedControl } from './components/ChalmersSegmen
 export type { ChalmersSegmentedControlProps } from './components/ChalmersSegmentedControl';
 export { default as ChalmersTagChip } from './components/ChalmersTagChip';
 export type { ChalmersTagChipProps } from './components/ChalmersTagChip';
+export { default as ChalmersMediaCard } from './components/ChalmersMediaCard';
+export type { ChalmersMediaCardProps } from './components/ChalmersMediaCard';
