@@ -19,3 +19,5 @@ export { default as PersonIcon } from './components/icons/PersonIcon';
 export { default as FlagUK } from './components/icons/FlagUK';
 export { default as FlagSE } from './components/icons/FlagSE';
 export type { FlagIconProps } from './components/icons/FlagUK';
+export { default as ChalmersSearchField } from './components/ChalmersSearchField';
+export type { ChalmersSearchFieldProps } from './components/ChalmersSearchField';
