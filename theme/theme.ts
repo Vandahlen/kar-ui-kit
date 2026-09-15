@@ -219,7 +219,8 @@ export const borderWidth = { hairline: 1 } as const;
  */
 export const decorative = {
   base: '#19242B',
-  /** Shape opacities over `base`. Measured 13-15% and 36-40%. */
+  /** NOMINAL tiers the shapes cluster around. Per-shape measured values
+   *  live in backgroundShapes.ts - do not snap them to these. */
   shapeOpacity: { low: 0.15, high: 0.4 },
   /** Top band on list tabs: brand colours at full opacity, ~60dp tall. */
   headerBandHeight: 60,
