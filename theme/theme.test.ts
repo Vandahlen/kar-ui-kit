@@ -1,4 +1,4 @@
-import { getTheme, sectionAccent, colors, Section } from './theme';
+import { getTheme, sectionAccent, colors, surfaces, Section } from './theme';
 
 describe('per-section accent', () => {
   it('defaults to hem when no section is given', () => {
@@ -23,5 +23,16 @@ describe('per-section accent', () => {
 
   it('round-trips the section so nested providers can inherit', () => {
     expect(getTheme(true, 'event').section).toBe('event');
+  });
+});
+
+describe('surface mapping', () => {
+  it('maps inputBg to the measured chrome surface, not elevated', () => {
+    // Measured: the app's search field is #374750 (surfaces.chrome), the same
+    // opaque surface as the filter button and segmented control. Mapping it to
+    // surfaces.elevated (#222D34) rendered the field visibly too dark - caught
+    // by a side-by-side against the real app, dist=75.
+    expect(getTheme(true).inputBg).toBe(surfaces.chrome);
+    expect(getTheme(true).inputBg).not.toBe(surfaces.elevated);
   });
 });
