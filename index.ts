@@ -29,3 +29,6 @@ export { default as ChalmersTagChip } from './components/ChalmersTagChip';
 export type { ChalmersTagChipProps } from './components/ChalmersTagChip';
 export { default as ChalmersMediaCard } from './components/ChalmersMediaCard';
 export type { ChalmersMediaCardProps } from './components/ChalmersMediaCard';
+export { default as ChalmersBackground } from './components/ChalmersBackground';
+export type { ChalmersBackgroundProps } from './components/ChalmersBackground';
+export * from './theme/backgroundShapes';
