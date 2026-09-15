@@ -269,7 +269,7 @@ export function getTheme(isDark: boolean, section: Section = 'hem'): ThemeTokens
     text: isDark ? colors.white : colors.black,
     subText: isDark ? surfaces.subText : colors.varmGra,
     border: isDark ? surfaces.border : colors.disabledBackground,
-    inputBg: isDark ? surfaces.elevated : '#F3F4F6',
+    inputBg: isDark ? surfaces.chrome : '#F3F4F6',
     disabledBackground: isDark ? '#3A3A3A' : colors.disabledBackground,
     disabledText: isDark ? 'rgba(255, 255, 255, 0.4)' : colors.disabledText,
     selectedTint: isDark ? surfaces.primaryTint : '#EAF7FF',
