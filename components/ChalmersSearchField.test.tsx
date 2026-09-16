@@ -30,3 +30,22 @@ test('forwards typing to onChangeText', () => {
   r.root.findByType(TextInput).props.onChangeText('pizza');
   expect(onChangeText).toHaveBeenCalledWith('pizza');
 });
+
+test('labels the input for screen readers, defaulting to the placeholder', () => {
+  const r = renderWithTheme(
+    <ChalmersSearchField testID="sf" value="" onChangeText={() => {}} />,
+  );
+  expect(r.root.findByType(TextInput).props.accessibilityLabel).toBe('Sök');
+});
+
+test('accepts an explicit accessibility label', () => {
+  const r = renderWithTheme(
+    <ChalmersSearchField
+      testID="sf"
+      value=""
+      onChangeText={() => {}}
+      accessibilityLabel="Search rooms"
+    />,
+  );
+  expect(r.root.findByType(TextInput).props.accessibilityLabel).toBe('Search rooms');
+});
