@@ -23,6 +23,8 @@ export interface ChalmersSearchFieldProps {
   value: string;
   onChangeText: (text: string) => void;
   placeholder?: string;
+  /** Screen-reader label. Defaults to the placeholder. */
+  accessibilityLabel?: string;
   style?: StyleProp<ViewStyle>;
   testID?: string;
 }
@@ -31,6 +33,7 @@ const ChalmersSearchField: React.FC<ChalmersSearchFieldProps> = ({
   value,
   onChangeText,
   placeholder = 'Sök',
+  accessibilityLabel,
   style,
   testID,
 }) => {
@@ -44,6 +47,7 @@ const ChalmersSearchField: React.FC<ChalmersSearchFieldProps> = ({
         onChangeText={onChangeText}
         placeholder={placeholder}
         placeholderTextColor={surfaces.subText}
+        accessibilityLabel={accessibilityLabel ?? placeholder}
         style={[styles.input, { color: theme.text }]}
       />
     </View>
